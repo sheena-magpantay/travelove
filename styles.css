@@ -903,9 +903,10 @@ input[type="submit"] {
 }
 
 
-a {
+.references a, .references-page a {
   word-break: break-all; 
 }
+
   .references-page {
     margin: 20px;
     padding: 10px;
