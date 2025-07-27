@@ -407,7 +407,7 @@ nav a:hover {
     border-left: 1px solid #ddd;
     padding-left: 20px;
     margin-top: 50px;
-     background: linear-gradient(to top, #6abcff, #ffffff);
+     background: linear-gradient(to bottom, #bae0ff, #ffffff);
     background-size: cover;
     background-position: center;
 
@@ -453,6 +453,7 @@ nav a:hover {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 30px;
+    margin: 30px;
 
 }
 
@@ -497,18 +498,17 @@ nav a:hover {
     margin-top: 60px;
     font-size: 20px;
     border-top: 10px solid rgba(2, 2, 41, 0.116);
+    margin:10px;
 }
 .references ul li{
     padding: 20px;
+    width: 100%;
 }
 .references ul li a{
      text-decoration: none;
      color: black;
 }
 
-.references-page{
-    margin: 8%;
-}
 
 .references-page h4{
     color: rgb(1, 1, 92);
@@ -703,6 +703,10 @@ input[type="submit"] {
 
 /* Responsive */
 @media (max-width: 768px) {
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    }
     .tablet-desktop{
         display: none;
     }
@@ -809,7 +813,7 @@ input[type="submit"] {
    .logo1 {
     display: none;
     }
-    
+
     #hero {
         
         flex-direction: column;
@@ -831,9 +835,11 @@ input[type="submit"] {
         padding: 90px 0;
     }
 
-    .blog-section{
-        margin-top:10px;
-    }
+     .blog-section {
+    margin: 10px;
+    margin-top: 60px;
+    padding: 20px;
+  }
 
     .blog-posts {
         width: 100%;
@@ -862,21 +868,24 @@ input[type="submit"] {
         margin-top: 30px;
     }
 
-    .main-content {
-        order: 1;
+     .main-content {
+        margin: 20px; 
+        width: 100%;
+        max-width: 100%;
     }
 
     .image-container img{
-        display: block;
+        width: 30vh; /* on mobile */
+        max-width: 100%;
+        height: auto;
         margin-left: auto;
-        width: 100%;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.479);
+        margin-right: auto;
     }
 
     .sidebar {
    padding: 30px;
    width: 100%;
-}
+    }
 
 /*image collage*/
 .image-collage {
@@ -893,6 +902,14 @@ input[type="submit"] {
   border: 5px solid white;
 }
 
+
+a {
+  word-break: break-all; 
+}
+  .references-page {
+    margin: 20px;
+    padding: 10px;
+  }
 /*Contacts*/
   #container-section {
         flex-direction: column;
